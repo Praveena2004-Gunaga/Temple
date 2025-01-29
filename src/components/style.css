@@ -1,0 +1,368 @@
+
+.navbar-brand{
+justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contentCenter{
+    display: flex;
+}
+.custom-nav-link {
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 8px 12px;
+  }
+  .custom-nav-link:hover {
+    background-color: #800000;
+    color: white !important;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  /* Gallery.css */
+.gallery {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .media-item {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Gallery.css */
+.gallery {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .media-item {
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Style for the modal overlay */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+  
+  .modal-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Red button styling */
+  button, .btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Ensuring images inside the gallery fit nicely */
+  .gallery-item {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.1);
+  }
+  
+
+  /* TempleGalleryCTA.css */
+
+.cta-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* Add a temple-related background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+  }
+  
+  .cta-overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text visibility */
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .cta-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a slight shadow for better readability */
+  }
+  
+  .cta-description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .cta-button {
+    background-color: #e63946; /* Red color to match the temple theme */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #d42f37; /* Darker red on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  .cta-button:active {
+    transform: scale(1); /* Reset zoom when clicked */
+  }
+  
+  /* TempleGalleryCTA.css */
+
+.cta-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f3f0f0;
+  }
+  
+  .cta-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    width: 80%; /* Narrower container */
+    max-width: 700px; /* Set a max width */
+    height: 60%; /* Adjust the height for a compact look */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Slight dark overlay */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards; /* Fade-in animation */
+  }
+  
+  .cta-image {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .cta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    transition: transform 0.3s ease; /* Image zoom effect */
+  }
+  
+  .cta-image:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .cta-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    color: #8B0000; /* Deep temple red */
+  }
+  
+  .cta-description {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #e6e6e6;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .cta-button {
+    background-color: #8B0000; /* Deep temple red */
+    color: white;
+    font-family: 'Times New Roman', serif;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff6347; /* Lighter red on hover */
+    transform: scale(1.05); /* Slight button zoom effect */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+/* Lightbox Modal Styles */
+.lightbox-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox-image {
+    width: auto; /* Maintain the image's aspect ratio */
+    height: 100%; /* Ensure the image fits within the height */
+    object-fit: contain; /* Make sure the image scales to fit inside the container */
+  }
+  
+  .lightbox-video {
+    width: auto; /* Maintain the video's aspect ratio */
+    height: 100%; /* Ensure the video fits within the height */
+    object-fit: contain; /* Make sure the video scales to fit inside the container */
+  }
+  
+  .close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+    

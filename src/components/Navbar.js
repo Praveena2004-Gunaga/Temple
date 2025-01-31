@@ -1,120 +1,60 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation for route tracking
+import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 
 const Navbar = () => {
-  // Use useLocation hook to track the current route
   const location = useLocation();
+  const isSticky = location.pathname === "/";
 
-  // Determine if the navbar should be sticky based on the route
-  const isSticky = location.pathname === "/"; // Assuming the navbar should be sticky only on the homepage
-  
   return (
-    <>
-      <div style={{ textAlign: "center", marginTop: "20px" }}>
-        <h1
-          style={{
-            color: "#900000", // Deep temple red
-            fontFamily: "'Times New Roman', serif", // Traditional font
-            fontWeight: "bold",
-            letterSpacing: "2px",
-          }}
-        >
-          ಶ್ರೀ ಶಾಂತಿಕಾ ಪರಮೇಶ್ವರಿ ದೇವಿ ದೇವಸ್ಥಾನ  
-          <br />
+    <div className="container-fluid px-0">
+      <div className="text-center my-3">
+        <h1 className="text-center fw-bold py-2" style={{
+          color: "#900000",
+          fontFamily: "'Times New Roman', serif",
+          letterSpacing: "2px",
+          backgroundColor: "#F8F0E3",
+          border: "2px solid #800000",
+          borderRadius: "8px",
+        }}>
+          ಶ್ರೀ ಶಾಂತಿಕಾ ಪರಮೇಶ್ವರಿ ದೇವಿ ದೇವಸ್ಥಾನ <br />
           Shri Shanthika Parameshwari Devi Temple
         </h1>
       </div>
 
-      {/* Navbar */}
-      <div style={{ position: "sticky", top: "0", zIndex: "1000" }}>
-        <div className="contentCneter">
-          <nav
-            className="navbar navbar-expand-lg"
-            style={{
-              backgroundColor: "transparent", // Fully transparent
-              backdropFilter: "none", // Prevents blur effect
-              borderBottom: "none", // Removes any border
-              boxShadow: "none", // Removes any shadow
-              position: isSticky ? "sticky" : "relative", // Make sticky only for the homepage
-            }}
-          >
-            <div className="container-fluid d-flex justify-content-center">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div>
-                <div
-                  className="navbar-collapse d-flex justify-content-center"
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navbar-nav gap-4">
-                    <li className="nav-item">
-                      <a className="nav-link active custom-nav-link" to="/">
-                        Home
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link custom-nav-link" href="#siteAbout">
-                        About
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link custom-nav-link" href="#">
-                        History
-                      </a>
-                    </li>
-                    <li className="nav-item dropdown">
-                      <a
-                        className="nav-link dropdown-toggle custom-nav-link"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                      >
-                        Dropdown
-                      </a>
-                      <ul className="dropdown-menu">
-                        <li>
-                          <a className="dropdown-item custom-nav-link" href="#siteInfo">
-                            Information
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item custom-nav-link" href="#siteGallery">
-                            Gallery
-                          </a>
-                        </li>
-                        <li>
-                          <hr className="dropdown-divider" />
-                        </li>
-                        <li>
-                          <a className="dropdown-item custom-nav-link" href="#">
-                            Contact info
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link disabled custom-nav-link" aria-disabled="true">
-                        Disabled
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
+      <nav className={`navbar navbar-expand-lg ${isSticky ? "sticky-navbar" : ""}`} style={{ backgroundColor: "#F8F0E3" }}>
+        <div className="container-fluid">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul className="navbar-nav text-center gap-lg-4">
+              <li className="nav-item">
+                <Link className="nav-link active custom-nav-link" to="/" style={{ color: "#800000" }}>Home</Link>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link custom-nav-link" href="#siteAbout" style={{ color: "#800000" }}>About</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link custom-nav-link" href="#history" style={{ color: "#800000" }}>History</a>
+              </li>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" style={{ color: "#800000" }}>Dropdown</a>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item custom-nav-link" href="#siteInfo" style={{ color: "#800000" }}>Information</a></li>
+                  <li><a className="dropdown-item custom-nav-link" href="#siteGallery" style={{ color: "#800000" }}>Gallery</a></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><a className="dropdown-item custom-nav-link" href="#contactInfo" style={{ color: "#800000" }}>Contact Info</a></li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link disabled custom-nav-link" aria-disabled="true" style={{ color: "#800000" }}>Disabled</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </>
+      </nav>
+    </div>
   );
 };
 

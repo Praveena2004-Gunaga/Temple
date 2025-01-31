@@ -6,7 +6,7 @@ import Gallery from './components/Gallary';
 
 const App = () => {
   return (
-    <div>
+    <div style={{background:"#fff"}}>
       {/* 
       <Home/> */}
 

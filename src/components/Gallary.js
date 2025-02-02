@@ -44,7 +44,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery">
-      <h2>Temple Gallery</h2>
+      <h1>Temple Gallery</h1>
       <div className="media-grid">
         {mediaItems.map((item, index) => (
           <div key={index} className="media-item">

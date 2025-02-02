@@ -10,12 +10,13 @@ const Navbar = () => {
     <div className="container-fluid px-0">
       <div className="text-center my-3">
         <h1 className="text-center fw-bold py-2" style={{
-          color: "#900000",
+          color: "#F8F0E3",
           fontFamily: "'Times New Roman', serif",
           letterSpacing: "2px",
-          backgroundColor: "#F8F0E3",
-          border: "2px solid #800000",
+         
+          border: "2px solid #F8F0E3",
           borderRadius: "8px",
+          background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)"
         }}>
           ಶ್ರೀ ಶಾಂತಿಕಾ ಪರಮೇಶ್ವರಿ ದೇವಿ ದೇವಸ್ಥಾನ <br />
           Shri Shanthika Parameshwari Devi Temple

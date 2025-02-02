@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom'; // To navigate to the gallery
 
 // Make sure to import the updated CSS
 
-
 const TempleGallery = () => {
   return (
-    <div className="cta-container" id="siteGallery">
+    <div className="cta-container" id="siteGallery" style={{background:"#fff"}}>
       <div className="cta-overlay">
        
         <h2 className="cta-title">Explore the Divine Temple Gallery</h2>

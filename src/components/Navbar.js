@@ -30,13 +30,13 @@ const Navbar = () => {
           <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul className="navbar-nav text-center gap-lg-4">
               <li className="nav-item">
-                <Link className="nav-link active custom-nav-link" to="/" style={{ color: "#800000" }}>Home</Link>
+                <a className="nav-link active custom-nav-link" href="/#first_page" style={{ color: "#800000" }}>Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-nav-link" href="#siteAbout" style={{ color: "#800000" }}>About</a>
+                <a className="nav-link custom-nav-link" href="/#siteAbout" style={{ color: "#800000" }}>About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-nav-link" href="#history" style={{ color: "#800000" }}>History</a>
+                <a className="nav-link custom-nav-link" href="/#history" style={{ color: "#800000" }}>History</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" style={{ color: "#800000" }}>Dropdown</a>

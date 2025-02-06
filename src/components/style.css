@@ -446,5 +446,10 @@ justify-content: center;
   display: flex;
   
 }
+/* Add this CSS to your stylesheet (or in the style tags) */
+.react-calendar__tile {
+  color: #333333 !important;  /* Darker color for all dates */
+}
+
 
     

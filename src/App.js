@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Gallery from './components/Gallary';
 import History_b from './components/History_b';
 import Deity from './components/Deity';
+import CalendarComponent from './components/CalendarComponent';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path='/gallary' element={<Gallery/>} />
           <Route exact path='/siteHistory' element={<History_b/>} />
           <Route exact path='/siteDeity' element={<Deity/>} />
+          <Route exact path='/siteCalendar' element={<CalendarComponent/>} />
         </Routes>
       </Router>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Gallery = () => {
+const Gallary = () => {
   const mediaItems = [
     { type: 'image', src: './images/pic1.jpg', alt: 'Temple Image 1' },
     { type: 'image', src: './images/pic3.jpg', alt: 'Temple Image 1' },
@@ -8,15 +8,8 @@ const Gallery = () => {
     { type: 'image', src: './images/pic5.jpg', alt: 'Temple Image 1' },
     { type: 'image', src: './images/pic6.jpg', alt: 'Temple Image 1' },
     { type: 'image', src: './images/pic2.jpg', alt: 'Temple Image 2' },
-    { type: 'image', src: './images/pic2.jpg', alt: 'Temple Image 2' },
-    { type: 'image', src: './images/pic2.jpg', alt: 'Temple Image 2' },
-    { type: 'image', src: './images/pic2.jpg', alt: 'Temple Image 2' },
     { type: 'video', src: './images/video1.mp4', alt: 'Temple Video 1' },
     { type: 'video', src: './images/video2.mp4', alt: 'Temple Video 2' },
-    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
-    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
-    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
-    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
     { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
   ];
 
@@ -33,10 +26,10 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery" style={{ textAlign: 'center', padding: '20px', backgroundColor: '#f5f5f5' }}>
-      <h1 style={{ fontSize: '2rem', marginBottom: '20px', color: '#333' }}>Temple Gallery</h1>
+    <div className="gallery" style={{ textAlign: 'center', padding: '20px', background: 'linear-gradient(to right, rgb(150, 0, 25), rgb(198, 98, 115))', color: '#fff', borderRadius: '10px' }}>
+      <h1 style={{ fontSize: '2rem', marginBottom: '20px', fontWeight: 'bold' }}>Sanctuary Showcase</h1>
       
-      <div className="image-scroll-container" style={{ overflowX: 'auto', whiteSpace: 'nowrap', paddingBottom: '10px', marginBottom: '20px', backgroundColor: '#fff', borderRadius: '10px', padding: '10px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+      <div className="image-scroll-container" style={{ overflowX: 'auto', whiteSpace: 'nowrap', padding: '10px', borderRadius: '10px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
         {mediaItems.filter(item => item.type === 'image').map((item, index) => (
           <img
             key={index}
@@ -49,17 +42,17 @@ const Gallery = () => {
               width: '200px',
               height: '150px',
               objectFit: 'cover',
-              borderRadius: '8px',
+              borderRadius: '10px',
               marginRight: '10px',
               display: 'inline-block',
-              border: '3px solid #007BFF'
+              border: '3px solid #fff'
             }}
           />
         ))}
       </div>
 
-      <h2 style={{ marginTop: '20px', color: '#333' }}>Temple Videos</h2>
-      <div className="video-scroll-container" style={{ overflowX: 'auto', whiteSpace: 'nowrap', paddingBottom: '10px', marginBottom: '20px', backgroundColor: '#fff', borderRadius: '10px', padding: '10px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+      <h2 style={{ marginTop: '20px', fontWeight: 'bold' }}>Divine Moments</h2>
+      <div className="video-scroll-container" style={{ overflowX: 'auto', whiteSpace: 'nowrap', padding: '10px', borderRadius: '10px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
         {mediaItems.filter(item => item.type === 'video').map((item, index) => (
           <video
             key={index}
@@ -69,10 +62,10 @@ const Gallery = () => {
               width: '300px',
               height: '200px',
               objectFit: 'cover',
-              borderRadius: '8px',
+              borderRadius: '10px',
               marginRight: '10px',
               display: 'inline-block',
-              border: '3px solid #007BFF'
+              border: '3px solid #fff'
             }}
           >
             <source src={item.src} type="video/mp4" />
@@ -117,4 +110,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Gallary;

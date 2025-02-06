@@ -104,7 +104,7 @@ function Home() {
           <h4 className="card-title">Festival Calendar</h4>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,#960019,rgb(198, 98, 115))", borderRadius: "8px" }}>
-            <Link className="nav-link" to="/events" style={{ color: "#F8F0E3" }}>Click here</Link>
+            <Link className="nav-link" to="/siteCalendar" style={{ color: "#F8F0E3" }}>Click here</Link>
           </button>
         </div>
       </div>

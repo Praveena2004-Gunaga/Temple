@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import Gallery from './components/Gallary';
 import History_b from './components/History_b';
+import Deity from './components/Deity';
 
 
 const App = () => {
@@ -18,7 +19,7 @@ const App = () => {
           <Route exact path='/' element={<Home/>}/>
           <Route exact path='/gallary' element={<Gallery/>} />
           <Route exact path='/siteHistory' element={<History_b/>} />
-       
+          <Route exact path='/siteDeity' element={<Deity/>} />
         </Routes>
       </Router>
     </div>

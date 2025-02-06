@@ -1,33 +1,23 @@
 import React, { useState } from 'react';
 
 const Gallery = () => {
-  // Define the media items (images and videos) for your gallery
   const mediaItems = [
-    {
-      type: 'image',
-      src: './images/pic1.jpg', // Replace with your temple image
-      alt: 'Temple Image 1',
-    },
-    {
-      type: 'image',
-      src: './images/pic2.jpg', // Replace with your temple image
-      alt: 'Temple Image 2',
-    },
-    {
-      type: 'video',
-      src: './images/video1.mp4', // Replace with your temple video
-      alt: 'Temple Video 1',
-    },
-    {
-      type: 'image',
-      src: './images/pic3.jpg', // Replace with your temple image
-      alt: 'Temple Image 3',
-    },
-    {
-      type: 'video',
-      src: './images/video2.mp4', // Replace with your temple video
-      alt: 'Temple Video 2',
-    },
+    { type: 'image', src: './images/pic1.jpg', alt: 'Temple Image 1' },
+    { type: 'image', src: './images/pic3.jpg', alt: 'Temple Image 1' },
+    { type: 'image', src: './images/pic4.jpg', alt: 'Temple Image 1' },
+    { type: 'image', src: './images/pic5.jpg', alt: 'Temple Image 1' },
+    { type: 'image', src: './images/pic6.jpg', alt: 'Temple Image 1' },
+    { type: 'image', src: './images/pic2.jpg', alt: 'Temple Image 2' },
+    { type: 'image', src: './images/pic2.jpg', alt: 'Temple Image 2' },
+    { type: 'image', src: './images/pic2.jpg', alt: 'Temple Image 2' },
+    { type: 'image', src: './images/pic2.jpg', alt: 'Temple Image 2' },
+    { type: 'video', src: './images/video1.mp4', alt: 'Temple Video 1' },
+    { type: 'video', src: './images/video2.mp4', alt: 'Temple Video 2' },
+    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
+    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
+    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
+    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
+    { type: 'video', src: './images/video3.mp4', alt: 'Temple Video 3' },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -43,44 +33,54 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery">
-      <h1>Temple Gallery</h1>
-      <div className="media-grid">
-        {mediaItems.map((item, index) => (
-          <div key={index} className="media-item">
-            {item.type === 'image' ? (
-              <img
-                src={item.src}
-                alt={item.alt}
-                className="gallery-item"
-                onClick={() => handleImageClick(item.src)}
-                style={{
-                  cursor: 'pointer',
-                  maxWidth: '100%',
-                  maxHeight: '300px', // Adjusted height for images
-                  objectFit: 'contain', // Ensures the whole image is shown without distortion
-                }}
-              />
-            ) : (
-              <video
-                controls
-                className="gallery-item"
-                style={{
-                  maxWidth: '100%', // Videos will take full width of the container
-                  height: 'auto', // Maintain aspect ratio of video
-                  objectFit: 'contain', // Ensure videos are displayed without cropping
-                  maxHeight: '600px', // Increased height for videos
-                }}
-              >
-                <source src={item.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            )}
-          </div>
+    <div className="gallery" style={{ textAlign: 'center', padding: '20px', backgroundColor: '#f5f5f5' }}>
+      <h1 style={{ fontSize: '2rem', marginBottom: '20px', color: '#333' }}>Temple Gallery</h1>
+      
+      <div className="image-scroll-container" style={{ overflowX: 'auto', whiteSpace: 'nowrap', paddingBottom: '10px', marginBottom: '20px', backgroundColor: '#fff', borderRadius: '10px', padding: '10px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+        {mediaItems.filter(item => item.type === 'image').map((item, index) => (
+          <img
+            key={index}
+            src={item.src}
+            alt={item.alt}
+            className="gallery-item"
+            onClick={() => handleImageClick(item.src)}
+            style={{
+              cursor: 'pointer',
+              width: '200px',
+              height: '150px',
+              objectFit: 'cover',
+              borderRadius: '8px',
+              marginRight: '10px',
+              display: 'inline-block',
+              border: '3px solid #007BFF'
+            }}
+          />
         ))}
       </div>
 
-      {/* Modal for image view */}
+      <h2 style={{ marginTop: '20px', color: '#333' }}>Temple Videos</h2>
+      <div className="video-scroll-container" style={{ overflowX: 'auto', whiteSpace: 'nowrap', paddingBottom: '10px', marginBottom: '20px', backgroundColor: '#fff', borderRadius: '10px', padding: '10px', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
+        {mediaItems.filter(item => item.type === 'video').map((item, index) => (
+          <video
+            key={index}
+            controls
+            className="gallery-item"
+            style={{
+              width: '300px',
+              height: '200px',
+              objectFit: 'cover',
+              borderRadius: '8px',
+              marginRight: '10px',
+              display: 'inline-block',
+              border: '3px solid #007BFF'
+            }}
+          >
+            <source src={item.src} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ))}
+      </div>
+
       {isOpen && (
         <div
           className="modal-overlay"
@@ -102,12 +102,14 @@ const Gallery = () => {
             src={currentImage}
             alt="Expanded view"
             style={{
-              maxHeight: '90vh', // Make the image fit the screen size
+              maxHeight: '90vh',
               maxWidth: '90%',
-              objectFit: 'contain', // Ensures the whole image is displayed
+              objectFit: 'contain',
               cursor: 'pointer',
+              border: '5px solid #fff',
+              borderRadius: '10px'
             }}
-            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking on the image
+            onClick={(e) => e.stopPropagation()}
           />
         </div>
       )}

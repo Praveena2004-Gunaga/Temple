@@ -8,7 +8,7 @@ const TempleGallery = () => {
       className="flex justify-center items-center h-[450px] text-center bg-cover bg-center"
       id="siteGallery"
       style={{
-        background: "linear-gradient(to right, rgba(150, 0, 25, 0.9), rgba(198, 98, 115, 0.8))",
+        background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)",
         backgroundSize: "cover",
         backgroundPosition: "center",
         color: "#fff",

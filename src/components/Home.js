@@ -19,13 +19,14 @@ function Home() {
       <History />
 
 {/* Information Section */}
-<div className='container' style={{padding:"3rem"}}>
+<div className='container' style={{padding:"2rem"}}>
 <div className='container' id="siteInfo" 
   style={{
-    background: "linear-gradient(to right, rgba(150, 0, 25, 0.9), rgba(198, 98, 115, 0.8))",
-    padding: "3rem 2rem",
+    background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)",
+    padding: "2rem 2rem",
     borderRadius: "12px",
-    boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.3)"
+    boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.3)",
+    width:"1250px"
   }}
 >
   {/* Added Heading and Shloka */}
@@ -65,7 +66,7 @@ function Home() {
         <div className="card-block" style={{ color: "#800000" }}>
           <h4 className="card-title">Temple Architecture</h4>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,#960019,rgb(198, 98, 115))", borderRadius: "8px" }}>
+          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)", borderRadius: "8px" }}>
             <Link className="nav-link" to="/architecture" style={{ color: "#F8F0E3" }}>Click here</Link>
           </button>
         </div>
@@ -77,7 +78,7 @@ function Home() {
         <div className="card-block" style={{ color: "#800000" }}>
           <h4 className="card-title">Daily Schedule</h4>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,#960019,rgb(198, 98, 115))", borderRadius: "8px" }}>
+          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)", borderRadius: "8px" }}>
             <Link className="nav-link" to="/schedule" style={{ color: "#F8F0E3" }}>Click here</Link>
           </button>
         </div>
@@ -89,7 +90,7 @@ function Home() {
         <div className="card-block" style={{ color: "#800000" }}>
           <h4 className="card-title">Deity Information</h4>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,#960019,rgb(198, 98, 115))", borderRadius: "8px" }}>
+          <button type="button" className='btn btn-primary' style={{background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)", borderRadius: "8px" }}>
             <Link className="nav-link" to="/siteDeity" style={{ color: "#F8F0E3" }}>Click here</Link>
           </button>
         </div>
@@ -103,7 +104,7 @@ function Home() {
         <div className="card-block" style={{ color: "#800000" }}>
           <h4 className="card-title">Festival Calendar</h4>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,#960019,rgb(198, 98, 115))", borderRadius: "8px" }}>
+          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)", borderRadius: "8px" }}>
             <Link className="nav-link" to="/siteCalendar" style={{ color: "#F8F0E3" }}>Click here</Link>
           </button>
         </div>
@@ -115,7 +116,7 @@ function Home() {
         <div className="card-block" style={{ color: "#800000" }}>
           <h4 className="card-title">Contact Information</h4>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,#960019,rgb(198, 98, 115))", borderRadius: "8px" }}>
+          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)", borderRadius: "8px" }}>
             <Link className="nav-link" to="/contact" style={{ color: "#F8F0E3" }}>Click here</Link>
           </button>
         </div>
@@ -127,7 +128,7 @@ function Home() {
         <div className="card-block" style={{ color: "#800000" }}>
           <h4 className="card-title">Spiritual Resources</h4>
           <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,#960019,rgb(198, 98, 115))", borderRadius: "8px" }}>
+          <button type="button" className='btn btn-primary' style={{ background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)", borderRadius: "8px" }}>
             <Link className="nav-link" to="/spiritual" style={{ color: "#F8F0E3" }}>Click here</Link>
           </button>
         </div>

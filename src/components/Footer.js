@@ -7,7 +7,7 @@ const Footer = () => {
     <footer 
       className="text-white text-center py-8"
       style={{
-        background: "linear-gradient(to right, rgba(150, 0, 25, 0.9), rgba(198, 98, 115, 0.8))",height:"18rem"
+        background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)",height:"18rem"
       }}
     >
       <div className="container mx-auto">

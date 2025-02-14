@@ -25,8 +25,8 @@ function Home() {
     background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)",
     padding: "2rem 2rem",
     borderRadius: "12px",
-    boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.3)",
-    width:"1250px"
+    boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.3)"
+   
   }}
 >
   {/* Added Heading and Shloka */}

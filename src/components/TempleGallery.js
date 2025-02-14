@@ -3,51 +3,62 @@ import { Link } from 'react-router-dom';
 
 const TempleGallery = () => {
   return (
-    <div className='container' style={{padding:"2rem"}}>
-<div 
-      className="flex justify-center items-center h-[450px] text-center bg-cover bg-center"
-      id="siteGallery"
-      style={{
-        background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        color: "#fff",
-        padding: "50px 20px",
-        borderRadius: "12px",
-      }}
-    >
-      <div className="max-w-2xl">
-        <h2 className="text-4xl font-bold tracking-wide">
-          Explore the Divine Temple Gallery
-        </h2>
-        <p className="mt-3 text-lg leading-relaxed opacity-90">
-          Step into a world of heritage, devotion, and beauty. Discover the essence of Shree Shantika Parameshwari Temple through a stunning visual journey.
-        </p>
-
-        {/* Soft Cream & Elegant Call-to-Action Button */}
-        <Link to="/gallary">
-          <button 
-            className="mt-6 px-6 py-3 text-lg font-semibold rounded-md transition-all shadow-lg"
-            style={{
-              backgroundColor: "#F8F0E3",
-              color: "#600020",
-              border: "2px solid #600020",
-              transition: "all 0.3s ease-in-out",
-            }}
-            onMouseOver={(e) => {
-              e.target.style.backgroundColor = "#EADAC8"; // Slightly darker cream on hover
-              e.target.style.color = "#500018"; // Darker maroon
-            }}
-            onMouseOut={(e) => {
-              e.target.style.backgroundColor = "#F8F0E3"; // Back to original
-              e.target.style.color = "#600020";
-            }}
-          >
-            Enter the Gallery →
-          </button>
-        </Link>
+    <div>
+      <div className='container' id="siteAbout">
+        <div className="my-4 py-5">
+          <div className="card  bg-light ">
+            <div className="row g-0">
+              <div className="col-md-4">
+                <img src="./images/pic2.jpg" className="img-fluid rounded-start" alt="About Us" />
+              </div>
+              <div className="col-md-8 d-flex flex-column justify-content-center" style={{ background: "linear-gradient(to right, #960019, rgb(198, 98, 115))", padding: "2rem", borderRadius: "0 12px 12px 0" }}>
+                <div className="card-body text-light text-center">
+                  <p className="card-text fs-5">
+                    <b>
+                      ಯತ್ರ ಯತ್ರ ಸ್ಥಿತೋ ದೇವಃ,<br />
+                      ಸ ನಿತ್ಯಂ ಭಕ್ತವತ್ಸಲಃ |<br />
+                      ದರ್ಶನಾತ್ ಪಾಪನಾಶಃ ಸ್ಯಾತ್, <br />
+                      ಭಕ್ತಾನಾಂ ಪುಣ್ಯವರ್ಧನಮ್ ॥
+                    </b>
+                  </p>
+                  <p className=" opacity-90">
+                    "ಯಾವುದೇ ದೇವಾಲಯದಲ್ಲಿರುವ ದೇವರು ಸದಾ ಭಕ್ತರಿಗೆ ಅನುಗ್ರಹವಂತನಾಗಿರುತ್ತಾರೆ.<br />
+                    ದೇವಾಲಯದ ದರ್ಶನದಿಂದ ಪಾಪ ವಿನಾಶವಾಗುತ್ತದೆ ಮತ್ತು ಪುಣ್ಯ ಹೆಚ್ಚುತ್ತದೆ."
+                  </p>
+                  
+                  <p className="mt-3  opacity-90 " style={{paddingTop:"2rem"}}>
+                  <h4 className="text-3xl font-bold tracking-wide mt-4">Explore the Divine Temple Gallery</h4>
+                    Immerse yourself in a realm of divine heritage, unwavering devotion, and timeless beauty. Embark on a mesmerizing visual journey that unveils the sacred essence of Shree Shantika Parameshwari Temple.
+                  </p>
+                 
+                  {/* Soft Cream & Elegant Call-to-Action Button */}
+                  <Link to="/gallary">
+                    <button
+                      className="mt-4 px-5 py-3 fs-6 fw-bold  shadow-lg border-2"
+                      style={{
+                        backgroundColor: "#F8F0E3",
+                        color: "#600020",
+                        
+                        transition: "all 0.3s ease-in-out",
+                      }}
+                      onMouseOver={(e) => {
+                        e.target.style.backgroundColor = "#EADAC8";
+                        e.target.style.color = "#500018";
+                      }}
+                      onMouseOut={(e) => {
+                        e.target.style.backgroundColor = "#F8F0E3";
+                        e.target.style.color = "#600020";
+                      }}
+                    >
+                      Enter the Gallery →
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

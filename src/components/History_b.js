@@ -43,7 +43,7 @@ The Shree Shantika Parameshwari Temple in Devarhakkal, Kumta, is not just a plac
             border: "2px solid #F8F0E3",
             borderRadius: "15px",
             padding: "20px",
-            background: "linear-gradient(to right, rgba(150, 0, 25, 0.9), rgba(198, 98, 115, 0.8))",
+            background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)",
             boxShadow: "4px 4px 15px rgba(0,0,0,0.2)",
             transition: "all 0.3s ease-in-out",
           }}

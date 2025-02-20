@@ -11,7 +11,7 @@ const TempleGallery = () => {
               <div className="col-md-4">
                 <img src="./images/pic2.jpg" className="img-fluid rounded-start" alt="About Us" />
               </div>
-              <div className="col-md-8 d-flex flex-column justify-content-center" style={{ background: "linear-gradient(to right, #960019, rgb(198, 98, 115))", padding: "2rem", borderRadius: "0 12px 12px 0" }}>
+              <div className="col-md-8 d-flex flex-column justify-content-center" style={{ background: "linear-gradient(to right, rgb(89, 0, 17), rgb(176, 89, 110))", padding: "2rem", borderRadius: "0 12px 12px 0" }}>
                 <div className="card-body text-light text-center">
                   <p className="card-text fs-5">
                     <b>

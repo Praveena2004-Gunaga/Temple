@@ -10,7 +10,7 @@ const Deity = () => {
       className="card mb-3 mx-auto"
       style={{
         maxWidth: "1000px",
-        background: "linear-gradient(to right, rgb(150, 0, 25), rgb(198, 98, 115))",
+        background: "linear-gradient(to right, rgb(102, 0, 20), rgb(186, 101, 120))",
         color: "#F8F0E3",
         borderRadius: "0",
         

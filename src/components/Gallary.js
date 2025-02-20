@@ -79,7 +79,7 @@ const Gallery = () => {
       </div>
       <button
         onClick={() => navigate("/videos")}
-        style={{ marginTop: "20px", padding: "10px 15px", border: "1px solid #ccc", borderRadius: "5px", background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)", cursor: "pointer" }}
+        style={{ marginTop: "20px", padding: "10px 15px", border: "1px solid #ccc", borderRadius: "5px", background: "linear-gradient(to right, rgb(89, 0, 17), rgb(176, 89, 110))", cursor: "pointer" }}
       >
         View More Videos
       </button>

@@ -10,7 +10,7 @@ const About = () => {
           <div className="col-md-4">
             <img src="./images/pic5.jpg" className="img-fluid rounded-start" alt="About Us" />
           </div>
-          <div className="col-md-8"  style={{background: "linear-gradient(to right,#960019,rgb(198, 98, 115)"}}>
+          <div className="col-md-8"  style={{background: "linear-gradient(to right, rgb(89, 0, 17), rgb(176, 89, 110))"}}>
             <div className="card-body">
               <h5 className="card-title fw-bold" style={{color:"#F8F0E3"}}>About Us</h5>
               <p className="card-text" style={{color:"#F8F0E3"}} >

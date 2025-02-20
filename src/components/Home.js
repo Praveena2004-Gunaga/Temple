@@ -19,12 +19,12 @@ function Home() {
       <History />
 
 {/* Information Section */}
-<div className='container' style={{padding:"2rem"}}>
-<div className='container' id="siteInfo" 
+<div  style={{paddingTop:"2rem"}}>
+<div  id="siteInfo" 
   style={{
-    background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)",
+    background: "linear-gradient(to right, rgb(102, 0, 20), rgb(186, 101, 120))",
     padding: "2rem 2rem",
-    borderRadius: "12px",
+   
     boxShadow: "0px 5px 15px rgba(0, 0, 0, 0.3)"
    
   }}
@@ -42,7 +42,7 @@ function Home() {
     background: "linear-gradient(to right, #F8E1C2, #FFDAB9)",  // Light cream to Peach gradient
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
-    padding: "10px",
+    padding: "20px",
     borderBottom: "3px solid #F8E1C2",  // Border color matching text
     display: "inline-block",
   }}

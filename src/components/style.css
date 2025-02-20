@@ -372,7 +372,7 @@ justify-content: center;
   align-items: center;
   justify-content: space-between; /* Shloka on left, video on right */
   height: 95vh; /* Full viewport height */
-  background: linear-gradient(to right, #960019, #c66273); /* Gradient background */
+  background: linear-gradient(to right, rgb(89, 0, 17), rgb(176, 89, 110)); /* Gradient background */
   color: white;
   padding: 40px;
   text-align: left;

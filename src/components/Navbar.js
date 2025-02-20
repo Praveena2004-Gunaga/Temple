@@ -7,7 +7,7 @@ const Navbar = () => {
   const isSticky = location.pathname === "/";
 
   return (
-    <div className="container-fluid px-0">
+    <div className="px-0">
       <div className="text-center my-3">
         <h1 className="text-center fw-bold py-2" style={{
           color: "#F8F0E3",
@@ -15,10 +15,10 @@ const Navbar = () => {
           letterSpacing: "2px",
          
           border: "2px solid #F8F0E3",
-          borderRadius: "8px",
-          background: "linear-gradient(to right,rgb(150, 0, 25),rgb(198, 98, 115)"
+          
+          background: "linear-gradient(to right, rgb(89, 0, 17), rgb(176, 89, 110))"
         }}>
-          ಶ್ರೀ ಶಾಂತಿಕಾ ಪರಮೇಶ್ವರಿ ದೇವಿ ದೇವಸ್ಥಾನ <br />
+          <b>ಶ್ರೀ ಶಾಂತಿಕಾ ಪರಮೇಶ್ವರಿ ದೇವಿ ದೇವಸ್ಥಾನ </b><br />
           Shri Shanthika Parameshwari Devi Temple
         </h1>
       </div>
